@@ -41,9 +41,8 @@ of `src/pages/index.astro`'s child components to change content.
 `logo-mark.png` is the transparent symbol used for nav/hero/footer;
 `logo-full.png` (opaque, on near-black) is the OG image.
 
-Note: `public/media/aerotwin-demo.mp4` is ~51 MB. It is loaded with
-`preload="metadata"` and `controls`, so it is not fetched until the visitor
-interacts with it. Keep it out of the critical path.
+The AeroTwin AI demo is embedded from YouTube (`https://www.youtube.com/embed/K-CrOEKbgHQ`)
+as a lazy-loaded iframe, so no large video file is shipped in `public/media/`.
 
 ## Running it in the Base44 sandbox
 

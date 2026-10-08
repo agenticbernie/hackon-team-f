@@ -43,13 +43,14 @@ import SectionHeader from '../SectionHeader.astro';
         <h4>AeroTwin AI — demo</h4>
         <p class="muted">Recorded demo from Agentic AI Build Week 2026.</p>
       </div>
-      <video
+      <iframe
         class="demo-video"
-        src="/media/aerotwin-demo.mp4"
-        controls
-        preload="metadata"
-        playsinline
-      ></video>
+        src="https://www.youtube.com/embed/K-CrOEKbgHQ"
+        title="AeroTwin AI — demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
     </div>
   </div>
 </section>
@@ -138,6 +139,7 @@ import SectionHeader from '../SectionHeader.astro';
   }
 
   .demo-video {
+    display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: var(--radius);
